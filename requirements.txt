@@ -1,8 +1,10 @@
-torch==2.7.1
-transformers
 fastapi
 uvicorn
+torch
+transformers
+scikit-learn
 joblib
+pandas
+numpy
 requests
-beautifulsoup4
-pydantic
+python-multipart
