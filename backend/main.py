@@ -45,11 +45,9 @@ BASE_DIR = os.path.dirname(__file__)
 
 ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
 
-MODEL_PATH = os.path.abspath(os.path.join(ROOT_DIR, "models", "distilbert_model"))
+MODEL_PATH = os.path.join(ROOT_DIR, "distilbert_model")
 
-ENCODER_PATH = os.path.join(ROOT_DIR, "models", "label_encoder.pkl")
-
-
+ENCODER_PATH = os.path.join(ROOT_DIR, "label_encoder.pkl")
 # ==================================================
 # DEVICE
 # ==================================================
