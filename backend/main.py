@@ -15,7 +15,7 @@ from collections import Counter
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-from llm_service import ask_llm
+from backend.llm_service import ask_llm
 
 # ==================================================
 # FASTAPI
