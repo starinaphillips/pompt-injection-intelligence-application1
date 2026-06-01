@@ -16,7 +16,7 @@ from collections import Counter
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 from backend.llm_service import ask_llm
-
+torch.set_grad_enabled(False)
 # ==================================================
 # FASTAPI
 # ==================================================
@@ -51,8 +51,7 @@ ENCODER_PATH = os.path.join(ROOT_DIR, "label_encoder.pkl")
 # ==================================================
 # DEVICE
 # ==================================================
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")
 #reader = easyocr.Reader(["en"])
 
 print("\n================================================")
